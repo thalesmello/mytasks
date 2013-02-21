@@ -1,7 +1,9 @@
 Tasks::Application.routes.draw do
-
+  get "sign_up" => "Users#new"
+  get "sign_in" => "Session#new"
   root :to => "Tasks#index"
   resources :tasks
+  resources :users
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

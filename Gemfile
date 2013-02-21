@@ -22,6 +22,7 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
+	gem 'sqlite3'
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'guard-rspec'
